@@ -849,158 +849,158 @@ class Game {
                         }
                         console.log("E")
                         break;
-                    case 32:
-                        let fall = true
-                        // let lowest = 0
-                        // let distance = 0
-                        // for (let i = 0; i < this.tetroTab.length; i++) {
-                        //     for (let j = 0; j < game.tetroTab[i].children.length; j++) {
-                        //         for (let k = 0; k < obj.children.length; k++) {
-                        //             if (game.tetroTab[i].children[j].position.x == obj.children[k].position.x && game.tetroTab[i].children[j].position.z == obj.children[k].position.z) {
-                        //                 console.log("checkLoop")
-                        //                 if (obj.children[k].position.y - game.tetroTab[i].children[j].position.y > distance) {
-                        //                     distance = (obj.children[k].position.y - game.tetroTab[i].children[j].position.y)
+//                     case 32:
+//                         let fall = true
+//                         // let lowest = 0
+//                         // let distance = 0
+//                         // for (let i = 0; i < this.tetroTab.length; i++) {
+//                         //     for (let j = 0; j < game.tetroTab[i].children.length; j++) {
+//                         //         for (let k = 0; k < obj.children.length; k++) {
+//                         //             if (game.tetroTab[i].children[j].position.x == obj.children[k].position.x && game.tetroTab[i].children[j].position.z == obj.children[k].position.z) {
+//                         //                 console.log("checkLoop")
+//                         //                 if (obj.children[k].position.y - game.tetroTab[i].children[j].position.y > distance) {
+//                         //                     distance = (obj.children[k].position.y - game.tetroTab[i].children[j].position.y)
 
-                        //                 }
-                        //             }
-                        //         }
+//                         //                 }
+//                         //             }
+//                         //         }
 
-                        //     }
-                        // }
-                        // console.log(distance)
-                        // if (distance != 0) {
-                        //     obj.position.y -= distance + 10
-                        // } else {
-                        //     console.log(distance)
-                        //     for (let i = 0; i < obj.children.length; i++) {
-                        //         if (obj.children[i].position.y < lowest) {
-                        //             lowest = obj.children[i].position.y
-                        //         }
-                        //     }
-                        //     obj.position.y = -lowest
-                        //     console.log("brak klocka pod")
-                        // }
+//                         //     }
+//                         // }
+//                         // console.log(distance)
+//                         // if (distance != 0) {
+//                         //     obj.position.y -= distance + 10
+//                         // } else {
+//                         //     console.log(distance)
+//                         //     for (let i = 0; i < obj.children.length; i++) {
+//                         //         if (obj.children[i].position.y < lowest) {
+//                         //             lowest = obj.children[i].position.y
+//                         //         }
+//                         //     }
+//                         //     obj.position.y = -lowest
+//                         //     console.log("brak klocka pod")
+//                         // }
 
-                        // for (let i = 0; i < tb.length; i++) {
-                        //     for (let j = 0; j < tb[i].children.length; j++) {
-                        //         for (let k = 0; k < obj.children.length; k++) {
-                        //             if (obj.children[k].position.x + obj.position.x == tb[i].children[j].position.x + tb[i].position.x && obj.children[k].position.z + obj.position.z == tb[i].children[j].position.z + tb[i].position.z) {
-                        //                 if (obj.children[k].position.y + obj.position.y - 10 == tb[i].children[j].position.y + tb[i].position.y) {
-                        //                     obj.userData.move = false
-                        //                     tb.push(obj)
-                        //                     fall = false
-                        //                     tetroId = Math.floor(Math.random() * 5) + 1
-                        //                     k = obj.children.length
-                        //                     j = tb[i].children.length
-                        //                     i = tb.length
-                        //                     for (let n = 0; n < obj.children.length; n++) {
-                        //                         if (obj.children[n].position.y + obj.position.y == 0) {
-                        //                             this.row0.push(obj.children[n])
-                        //                             console.log("DODAJ ROW 0")
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 10) {
-                        //                             this.row1.push(obj.children[n])
-                        //                             console.log("DODAJ ROW 1")
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 20) {
-                        //                             this.row2.push(obj.children[n])
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 30) {
-                        //                             this.row3.push(obj.children[n])
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 40) {
-                        //                             this.row4.push(obj.children[n])
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 50) {
-                        //                             this.row5.push(obj.children[n])
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 60) {
-                        //                             this.row6.push(obj.children[n])
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 70) {
-                        //                             this.row7.push(obj.children[n])
-                        //                         }
-                        //                         else if (obj.children[n].position.y + obj.position.y == 80) {
-                        //                             this.row8.push(obj.children[n])
-                        //                         }
-                        //                     }
-                        //                     console.log("__________________________")
-                        //                     this.checkRow()
-                        //                     this.checkWin(obj)
-                        //                     if (this.gameOn == true) {
-                        //                         this.createTetro(this.tetroId)
-                        //                     }
-                        //                 }
-                        //             }
-                        //         }
-                        //     }
-                        // }
-                        // if (fall == true) {
-                        //     for (let i = 0; i < obj.children.length; i++) {
-                        //         if (obj.children[i].position.y + obj.position.y == 0) {
-                        //             obj.userData.move = false
-                        //             this.tetroTab.push(obj)
-                        //             fall = false
-                        //             i = obj.children.length;
-                        //             for (let n = 0; n < obj.children.length; n++) {
-                        //                 if (obj.children[n].position.y + obj.position.y == 0) {
-                        //                     this.row0.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 10) {
-                        //                     this.row1.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 20) {
-                        //                     this.row2.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 30) {
-                        //                     this.row3.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 40) {
-                        //                     this.row4.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 50) {
-                        //                     this.row5.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 60) {
-                        //                     this.row6.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 70) {
-                        //                     this.row7.push(obj.children[n])
-                        //                 }
-                        //                 else if (obj.children[n].position.y + obj.position.y == 80) {
-                        //                     this.row8.push(obj.children[n])
-                        //                 }
-                        //             }
-                        //             console.log("__________________________")
-                        //             this.checkRow()
-                        //             this.checkWin(obj)
+//                         // for (let i = 0; i < tb.length; i++) {
+//                         //     for (let j = 0; j < tb[i].children.length; j++) {
+//                         //         for (let k = 0; k < obj.children.length; k++) {
+//                         //             if (obj.children[k].position.x + obj.position.x == tb[i].children[j].position.x + tb[i].position.x && obj.children[k].position.z + obj.position.z == tb[i].children[j].position.z + tb[i].position.z) {
+//                         //                 if (obj.children[k].position.y + obj.position.y - 10 == tb[i].children[j].position.y + tb[i].position.y) {
+//                         //                     obj.userData.move = false
+//                         //                     tb.push(obj)
+//                         //                     fall = false
+//                         //                     tetroId = Math.floor(Math.random() * 5) + 1
+//                         //                     k = obj.children.length
+//                         //                     j = tb[i].children.length
+//                         //                     i = tb.length
+//                         //                     for (let n = 0; n < obj.children.length; n++) {
+//                         //                         if (obj.children[n].position.y + obj.position.y == 0) {
+//                         //                             this.row0.push(obj.children[n])
+//                         //                             console.log("DODAJ ROW 0")
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 10) {
+//                         //                             this.row1.push(obj.children[n])
+//                         //                             console.log("DODAJ ROW 1")
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 20) {
+//                         //                             this.row2.push(obj.children[n])
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 30) {
+//                         //                             this.row3.push(obj.children[n])
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 40) {
+//                         //                             this.row4.push(obj.children[n])
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 50) {
+//                         //                             this.row5.push(obj.children[n])
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 60) {
+//                         //                             this.row6.push(obj.children[n])
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 70) {
+//                         //                             this.row7.push(obj.children[n])
+//                         //                         }
+//                         //                         else if (obj.children[n].position.y + obj.position.y == 80) {
+//                         //                             this.row8.push(obj.children[n])
+//                         //                         }
+//                         //                     }
+//                         //                     console.log("__________________________")
+//                         //                     this.checkRow()
+//                         //                     this.checkWin(obj)
+//                         //                     if (this.gameOn == true) {
+//                         //                         this.createTetro(this.tetroId)
+//                         //                     }
+//                         //                 }
+//                         //             }
+//                         //         }
+//                         //     }
+//                         // }
+//                         // if (fall == true) {
+//                         //     for (let i = 0; i < obj.children.length; i++) {
+//                         //         if (obj.children[i].position.y + obj.position.y == 0) {
+//                         //             obj.userData.move = false
+//                         //             this.tetroTab.push(obj)
+//                         //             fall = false
+//                         //             i = obj.children.length;
+//                         //             for (let n = 0; n < obj.children.length; n++) {
+//                         //                 if (obj.children[n].position.y + obj.position.y == 0) {
+//                         //                     this.row0.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 10) {
+//                         //                     this.row1.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 20) {
+//                         //                     this.row2.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 30) {
+//                         //                     this.row3.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 40) {
+//                         //                     this.row4.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 50) {
+//                         //                     this.row5.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 60) {
+//                         //                     this.row6.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 70) {
+//                         //                     this.row7.push(obj.children[n])
+//                         //                 }
+//                         //                 else if (obj.children[n].position.y + obj.position.y == 80) {
+//                         //                     this.row8.push(obj.children[n])
+//                         //                 }
+//                         //             }
+//                         //             console.log("__________________________")
+//                         //             this.checkRow()
+//                         //             this.checkWin(obj)
 
-                        //             if (this.gameOn == true) {
-                        //                 this.tetroId = Math.floor(Math.random() * 5) + 1
-                        //                 this.createTetro(this.tetroId)
-                        //             }
-                        //             break
-                        //         }
-                        //     }
-                        // }
+//                         //             if (this.gameOn == true) {
+//                         //                 this.tetroId = Math.floor(Math.random() * 5) + 1
+//                         //                 this.createTetro(this.tetroId)
+//                         //             }
+//                         //             break
+//                         //         }
+//                         //     }
+//                         // }
 
 
-                        tab.push(obj)
-                        this.createTetro(this.tetroId)
-                        console.log("bottom")
-                        obj.userData.move = false
-                        break;
-                    case 16:
+//                         tab.push(obj)
+//                         this.createTetro(this.tetroId)
+//                         console.log("bottom")
+//                         obj.userData.move = false
+//                         break;
+//                     case 16:
 
-                        let x = 75
-                        let y = 90
-                        let z = 0
+//                         let x = 75
+//                         let y = 90
+//                         let z = 0
 
-                        console.log(this.scene)
+//                         console.log(this.scene)
 
-                        this.secondTetro = obj
-                        this.scene.remove(obj)
-                        this.secondTetro.position.set(x, y, z)
+//                         this.secondTetro = obj
+//                         this.scene.remove(obj)
+//                         this.secondTetro.position.set(x, y, z)
 
                 }
             }
@@ -1182,7 +1182,7 @@ class Game {
             this.row8 = []
         }
 
-        if (this.row1.length == 10) {
+        if (this.row1.length == 64) {
             for (let i = 0; i < this.row1.length; i++) {
                 this.row1[i].geometry.dispose()
                 this.row1[i].material.dispose()
@@ -1205,7 +1205,7 @@ class Game {
             this.row8 = []
         }
 
-        if (this.row0.length >= 10) {
+        if (this.row0.length >= 64) {
             console.log("clear ROW 0")
             for (let i = 0; i < this.row0.length; i++) {
                 this.row0[i].geometry.dispose()
@@ -1360,7 +1360,7 @@ class Game {
             this.enemyRow8 = []
         }
 
-        if (this.enemyRow1.length == 10) {
+        if (this.enemyRow1.length == 64) {
             for (let i = 0; i < this.enemyRow1.length; i++) {
                 this.enemyRow1[i].geometry.dispose()
                 this.enemyRow1[i].material.dispose()
@@ -1383,7 +1383,7 @@ class Game {
             this.enemyRow8 = []
         }
 
-        if (this.enemyRow0.length >= 10) {
+        if (this.enemyRow0.length >= 64) {
             console.log("clear ROW 0")
             for (let i = 0; i < this.enemyRow0.length; i++) {
                 this.enemyRow0[i].geometry.dispose()
