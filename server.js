@@ -17,7 +17,7 @@ const filepath = path.join(__dirname, "databases", "Blocks.db")
 // form.uploadDir = "databases/"
 const express = require("express");
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000;
 var users = []
 const users_info = {
     user1: {
